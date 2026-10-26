@@ -5,9 +5,57 @@
   box-sizing: border-box;
 }
 
+header img{
+
+    width: 70px;
+    height: auto;
+    align-content: center;
+
+}
+header h3{
+
+    color: white;
+}
+
+header{
+
+    background-color: #0b0b0b;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #333
+}
+
+.navigation{
+    margin-left: auto;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 8px;
+}
+
+.navigation ul{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.navigation a:hover{
+
+      border-bottom-color: #a3ff12;
+
+}
+
 body{
 
       font-family: "Inter", sans-serif;
 
-
 }
+
