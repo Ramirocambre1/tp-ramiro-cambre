@@ -10,6 +10,7 @@
     
     --nvidia-green:  #a3ff12;
     --black-background: #0b0b0b;
+    --amd-red: #e53935;
 }
 
 header img{
@@ -121,6 +122,7 @@ footer {
   color: white;
   text-align: center;
   padding: 30px 20px;
+   border-top: 1px solid #333;
 }
 
 footer a {
@@ -132,4 +134,92 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+
+.products{
+    flex: 1;
+    background-color: var(--black-background);
+    color: white;
+    padding: 60px;
+}
+
+.products-content{
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.products-content h1{
+
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+
+.products-content p{
+
+    font-size: 20px;
+}
+
+.products-list{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.product-card {
+  width: calc(50% - 12px);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(32, 31, 31);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.product-card img {
+  width: 45%;
+  height: 220px;
+  object-fit: contain;
+}
+
+
+.product-card-info {
+  flex: 1;
+  display: inline-block;
+}
+
+.product-card-info h3{
+
+    font-size: 30px;
+
+}
+
+.product-card-info p{
+
+     color: #bcbcbc;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 12px 0 40px;
+
+}
+
+.product-card-info a{
+
+    background-color: var(--nvidia-green);
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: black;
+
+}
+
+.bi-nvidia {
+  color: var(--nvidia-green);
+}
+
+.bi-amd {
+  color: var(--amd-red);
 }
