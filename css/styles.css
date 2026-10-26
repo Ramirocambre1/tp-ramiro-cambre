@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+/* VARIABLES DE COLORES */
+:root{
+    
+    --nvidia-green:  #a3ff12;
+    --black-background: #0b0b0b;
+}
+
 header img{
 
     width: 70px;
@@ -19,7 +26,7 @@ header h3{
 
 header{
 
-    background-color: #0b0b0b;
+    background-color: var(--black-background);
     padding: 40px;
     display: flex;
     align-items: center;
@@ -49,13 +56,70 @@ header{
 
 .navigation a:hover{
 
-      border-bottom-color: #a3ff12;
+      border-bottom-color: var(--nvidia-green);
 
 }
 
 body{
 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
       font-family: "Inter", sans-serif;
 
 }
 
+main{
+    flex: 1;
+    display: flex;
+}
+
+.hero{
+
+  flex: 1;
+  min-height: 80vh;
+  background-image: url("../assets/img/placas-fondo.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+
+.hero-content{
+
+    
+}
+
+.nvidia-amd{
+
+    font-size: 30px;
+    color: var(--nvidia-green);
+}
+.hero-content h1{
+    color: white;
+    font-size: 90px;
+}
+
+.info{
+
+    font-size: 30px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-content a{
+
+    background-color: var(--nvidia-green);
+    list-style: none;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 20px;
+    color: var(--black-background);
+
+}
+footer{
+
+    background-color: var(--black-background);
+}
