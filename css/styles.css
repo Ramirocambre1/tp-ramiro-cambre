@@ -86,10 +86,7 @@ main{
   padding: 60px;
 }
 
-.hero-content{
 
-    
-}
 
 .nvidia-amd{
 
@@ -119,7 +116,20 @@ main{
     color: var(--black-background);
 
 }
-footer{
+footer {
+  background-color: var(--black-background);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
 
-    background-color: var(--black-background);
+footer a {
+  display: inline-block;
+  color: var(--nvidia-green);
+  text-decoration: none;
+  margin: 12px 0;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
