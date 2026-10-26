@@ -12,3 +12,7 @@ Sitio web multipágina sobre placas de video NVIDIA y AMD, desarrollado para el 
 ## Tecnologías
 
 HTML, CSS, Flexbox, Google Fonts (Inter) y Bootstrap Icons.
+
+## Referencias
+
+Las referencias utilizadas para realizar la pagina se pueden encontrar dentro de la carpeta assets/Referencias
