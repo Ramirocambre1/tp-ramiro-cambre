@@ -1,14 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rama-GPUS</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <img src="./assets/img/icono-gpu.png " alt="" />
+      <img src="./assets/img/icono-gpu.png" alt="" />
       <h3>Rama GPUS</h3>
       <nav class="navigation">
         <ul>
@@ -19,7 +25,76 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="contact">
+        <div class="contact-content">
+          <h1>Contactanos</h1>
+          <p>
+            ¿Buscás tu próxima placa de video? Escribinos y te ayudamos a elegir.
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <div class="contact-fields">
+            <div class="form-field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+
+            <div class="form-field">
+              <label for="telefono">Teléfono</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                inputmode="numeric"
+                pattern="[0-9]{7,15}"
+                title="Ingresá entre 7 y 15 dígitos, sin espacios ni guiones"
+                autocomplete="tel"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="motivo">Motivo de contacto</label>
+              <select id="motivo" name="motivo" required>
+                <option value="" selected disabled>Elegí una opción</option>
+                <option value="producto">Consulta de producto</option>
+                <option value="asesoramiento">Asesoramiento</option>
+                <option value="garantia">Garantía</option>
+              </select>
+            </div>
+
+            <div class="form-field form-field-full">
+              <label for="comentarios">Comentarios</label>
+              <textarea id="comentarios" name="comentarios" rows="5" required></textarea>
+            </div>
+          </div>
+
+          <fieldset class="form-brand">
+            <legend>Marca de interés</legend>
+            <label for="marca-nvidia">
+              <input type="radio" id="marca-nvidia" name="marca" value="nvidia" required />
+              NVIDIA
+            </label>
+            <label for="marca-amd">
+              <input type="radio" id="marca-amd" name="marca" value="amd" />
+              AMD
+            </label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+          </div>
+        </form>
+      </section>
+    </main>
     <footer>
       <p>Rama GPUS</p>
       <a href="./contacto.html">Contacto</a>
